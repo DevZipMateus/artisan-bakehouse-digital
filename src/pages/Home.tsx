@@ -85,14 +85,14 @@ const Home = () => {
           <img 
             src={sectionDivider} 
             alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-15 -translate-y-2"
+            className="w-full h-auto block absolute top-0 left-0 opacity-15 -translate-y-6"
             aria-hidden="true"
           />
           {/* Layer 2 - Middle (30% opacity, slightly displaced) */}
           <img 
             src={sectionDivider} 
             alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-30 -translate-y-1"
+            className="w-full h-auto block absolute top-0 left-0 opacity-30 -translate-y-3"
             aria-hidden="true"
           />
           {/* Layer 3 - Front (100% opacity, main divider) */}
@@ -106,51 +106,21 @@ const Home = () => {
         {/* Product Images - Positioned at the divider line */}
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-50">
           <div className="container mx-auto px-4 flex justify-between items-center">
-            {/* Bread Basket with layered effect */}
+            {/* Bread Basket - Single Image */}
             <div className="relative animate-fade-in" style={{ animationDelay: "1s" }}>
-              {/* Layer 1 - Background (20% opacity, displaced) */}
-              <img 
-                src={heroBreadBasket} 
-                alt="" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain absolute top-0 left-0 opacity-20 -translate-x-3 translate-y-3"
-                aria-hidden="true"
-              />
-              {/* Layer 2 - Middle (40% opacity, slightly displaced) */}
-              <img 
-                src={heroBreadBasket} 
-                alt="" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain absolute top-0 left-0 opacity-40 -translate-x-1.5 translate-y-1.5"
-                aria-hidden="true"
-              />
-              {/* Layer 3 - Front (100% opacity, main image) */}
               <img 
                 src={heroBreadBasket} 
                 alt="Pães Artesanais" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain relative drop-shadow-2xl"
+                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
               />
             </div>
             
-            {/* Coxinhas with layered effect */}
+            {/* Coxinhas - Single Image */}
             <div className="relative animate-fade-in" style={{ animationDelay: "1.2s" }}>
-              {/* Layer 1 - Background */}
-              <img 
-                src={heroCoxinhas} 
-                alt="" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain absolute top-0 left-0 opacity-20 translate-x-3 translate-y-3"
-                aria-hidden="true"
-              />
-              {/* Layer 2 - Middle */}
-              <img 
-                src={heroCoxinhas} 
-                alt="" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain absolute top-0 left-0 opacity-40 translate-x-1.5 translate-y-1.5"
-                aria-hidden="true"
-              />
-              {/* Layer 3 - Front */}
               <img 
                 src={heroCoxinhas} 
                 alt="Coxinhas" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain relative drop-shadow-2xl"
+                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
               />
             </div>
           </div>
