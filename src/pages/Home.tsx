@@ -78,9 +78,9 @@ const Home = () => {
       </section>
 
       {/* Section Divider with Product Images */}
-      <div className="relative -mt-10 mb-[-2px] overflow-hidden">
+      <div className="relative -mt-16 mb-[-4px] overflow-hidden">
         {/* Layered SVG Effect */}
-        <div className="relative w-full leading-[0]">
+        <div className="relative w-full leading-[0] block">
           {/* Layer 1 - Background (15% opacity, displaced up) */}
           <img 
             src={sectionDivider} 
@@ -158,7 +158,7 @@ const Home = () => {
       </div>
 
       {/* Categories Section */}
-      <section className="py-20 container mx-auto px-4">
+      <section className="py-20 container mx-auto px-4 -mt-1">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Produtos
