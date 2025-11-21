@@ -86,18 +86,18 @@ const Home = () => {
               alt="" 
               className="w-full h-auto block relative"
             />
-            {/* Layer 2 - Middle (40% opacity, displaced down) */}
+            {/* Layer 2 - Middle (60% opacity, displaced down) */}
             <img 
               src={sectionDivider} 
               alt="" 
-              className="w-full h-auto block absolute top-0 left-0 opacity-40 translate-y-3"
+              className="w-full h-auto block absolute top-0 left-0 opacity-60 translate-y-4"
               aria-hidden="true"
             />
-            {/* Layer 3 - Background (20% opacity, displaced down more) */}
+            {/* Layer 3 - Background (30% opacity, displaced down more) */}
             <img 
               src={sectionDivider} 
               alt="" 
-              className="w-full h-auto block absolute top-0 left-0 opacity-20 translate-y-6"
+              className="w-full h-auto block absolute top-0 left-0 opacity-30 translate-y-8"
               aria-hidden="true"
             />
           </div>
