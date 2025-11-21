@@ -41,18 +41,18 @@ const Home = () => {
         {/* Dark overlay para melhorar legibilidade do texto sobre o vídeo */}
         <div className="absolute inset-0 bg-black/40" />
         
-        {/* Product Images - Left Side - MAIOR */}
-        <div className="absolute left-0 bottom-0 w-1/3 lg:w-2/5 hidden lg:block animate-fade-in z-10" style={{
+        {/* Product Images - Left Side - Mesmo tamanho */}
+        <div className="absolute left-0 bottom-0 h-[400px] lg:h-[500px] hidden lg:block animate-fade-in z-10" style={{
         animationDelay: "1s"
       }}>
-          <img src={heroBreadBasket} alt="Pães Artesanais" className="w-full h-auto object-contain" />
+          <img src={heroBreadBasket} alt="Pães Artesanais" className="h-full w-auto object-contain" />
         </div>
         
-        {/* Product Images - Right Side - MAIOR */}
-        <div className="absolute right-0 bottom-0 w-1/3 lg:w-2/5 hidden lg:block animate-fade-in z-10" style={{
+        {/* Product Images - Right Side - Mesmo tamanho */}
+        <div className="absolute right-0 bottom-0 h-[400px] lg:h-[500px] hidden lg:block animate-fade-in z-10" style={{
         animationDelay: "1.2s"
       }}>
-          <img src={heroCoxinhas} alt="Coxinhas" className="w-full h-auto object-contain" />
+          <img src={heroCoxinhas} alt="Coxinhas" className="h-full w-auto object-contain" />
         </div>
 
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
