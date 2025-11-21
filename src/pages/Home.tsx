@@ -79,8 +79,28 @@ const Home = () => {
 
       {/* Section Divider with Product Images */}
       <div className="relative">
-        <div className="w-full leading-[0]">
-          <img src={sectionDivider} alt="" className="w-full h-auto block" />
+        {/* Layered SVG Effect */}
+        <div className="relative w-full leading-[0]">
+          {/* Layer 1 - Background (15% opacity, displaced up) */}
+          <img 
+            src={sectionDivider} 
+            alt="" 
+            className="w-full h-auto block absolute top-0 left-0 opacity-15 -translate-y-2"
+            aria-hidden="true"
+          />
+          {/* Layer 2 - Middle (30% opacity, slightly displaced) */}
+          <img 
+            src={sectionDivider} 
+            alt="" 
+            className="w-full h-auto block absolute top-0 left-0 opacity-30 -translate-y-1"
+            aria-hidden="true"
+          />
+          {/* Layer 3 - Front (100% opacity, main divider) */}
+          <img 
+            src={sectionDivider} 
+            alt="" 
+            className="w-full h-auto block relative"
+          />
         </div>
         
         {/* Product Images - Positioned at the divider line */}
