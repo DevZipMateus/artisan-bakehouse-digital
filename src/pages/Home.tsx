@@ -27,23 +27,37 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[650px] md:h-[750px] overflow-hidden bg-gradient-to-b from-[#2d1810] via-[#3d2418] to-[#4a2e1f]">
-        {/* Product Images - Left Side */}
-        <div className="absolute left-0 bottom-0 w-1/4 hidden lg:block animate-fade-in" style={{
+        {/* Background Video - Preparado para receber vídeo do GitHub */}
+        {/* <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video-hero.mp4" type="video/mp4" />
+        </video> */}
+        
+        {/* Dark overlay para melhorar legibilidade do texto sobre o vídeo */}
+        <div className="absolute inset-0 bg-black/40" />
+        
+        {/* Product Images - Left Side - MAIOR */}
+        <div className="absolute left-0 bottom-0 w-1/3 lg:w-2/5 hidden lg:block animate-fade-in z-10" style={{
         animationDelay: "1s"
       }}>
           <img src={heroBreadBasket} alt="Pães Artesanais" className="w-full h-auto object-contain" />
         </div>
         
-        {/* Product Images - Right Side */}
-        <div className="absolute right-0 bottom-0 w-1/4 hidden lg:block animate-fade-in" style={{
+        {/* Product Images - Right Side - MAIOR */}
+        <div className="absolute right-0 bottom-0 w-1/3 lg:w-2/5 hidden lg:block animate-fade-in z-10" style={{
         animationDelay: "1.2s"
       }}>
           <img src={heroCoxinhas} alt="Coxinhas" className="w-full h-auto object-contain" />
         </div>
 
-        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center">
+        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
           <div className="text-center logo-entrance">
-            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-48 md:w-64 lg:w-80 mx-auto mb-8" />
+            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-64 md:w-80 lg:w-96 xl:w-[420px] mx-auto mb-8" />
           </div>
           
           <div className="text-center animate-fade-in" style={{
