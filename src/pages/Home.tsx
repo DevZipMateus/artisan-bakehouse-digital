@@ -90,18 +90,27 @@ const Home = () => {
 
       {/* Products Section */}
       <section className="py-20 container mx-auto px-4 -mt-1">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="font-display text-4xl md:text-6xl font-bold text-primary">
+        <div className="text-center mb-12 animate-fade-in px-4">
+          <h2 className="font-display text-4xl md:text-6xl font-bold text-primary hover:text-primary transition-none">
             Qualidade e Tradição na Sua Mesa
           </h2>
         </div>
 
-        <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <div className="flex justify-center animate-fade-in mb-12" style={{ animationDelay: "0.2s" }}>
           <img 
             src={kroningProducts} 
             alt="Produtos Kroning" 
             className="w-full max-w-5xl h-auto object-contain"
           />
+        </div>
+
+        <div className="text-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <Link to="/produtos">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
+              Ver Todos os Produtos
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 
