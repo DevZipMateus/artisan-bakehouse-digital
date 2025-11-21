@@ -27,7 +27,7 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden bg-gradient-to-b from-[#3D1F0F] via-[#5C2E14] to-[#7A3E1A]">
+      <section className="relative h-[70vh] md:h-[75vh] overflow-hidden bg-gradient-to-b from-[#3D1F0F] via-[#5C2E14] to-[#7A3E1A]">
         {/* Background Video */}
         <video 
           autoPlay 
@@ -78,9 +78,9 @@ const Home = () => {
       </section>
 
       {/* Section Divider with Product Images */}
-      <div className="relative -mt-24 mb-[-4px]">
+      <div className="relative -mt-32 md:-mt-24 mb-[-4px]">
         {/* Layered SVG Effect */}
-        <div className="relative w-full leading-[0] block scale-110 overflow-hidden">
+        <div className="relative w-full leading-[0] block scale-[2] md:scale-[1.8] overflow-hidden">
           {/* Layer 1 - Background (15% opacity, displaced up) */}
           <img 
             src={sectionDivider} 
