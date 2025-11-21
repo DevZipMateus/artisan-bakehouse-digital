@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
+import heroBreadBasket from "@/assets/hero-bread-basket.png";
+import heroCoxinhas from "@/assets/hero-coxinhas.png";
 import productBread from "@/assets/product-bread.jpg";
 import productCookies from "@/assets/product-cookies.jpg";
 import productSweets from "@/assets/product-sweets.jpg";
@@ -32,6 +34,24 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[650px] md:h-[750px] overflow-hidden bg-gradient-to-b from-[#2d1810] via-[#3d2418] to-[#4a2e1f]">
+        {/* Product Images - Left Side */}
+        <div className="absolute left-0 bottom-0 w-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "1s" }}>
+          <img 
+            src={heroBreadBasket} 
+            alt="Pães Artesanais" 
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        
+        {/* Product Images - Right Side */}
+        <div className="absolute right-0 bottom-0 w-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "1.2s" }}>
+          <img 
+            src={heroCoxinhas} 
+            alt="Coxinhas" 
+            className="w-full h-auto object-contain"
+          />
+        </div>
+
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center">
           <div className="text-center logo-entrance">
             <img 
@@ -64,6 +84,11 @@ const Home = () => {
               </Button>
             </Link>
           </div>
+        </div>
+        
+        {/* Scroll Down Arrow */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <ChevronDown className="h-8 w-8 text-secondary" />
         </div>
       </section>
 
