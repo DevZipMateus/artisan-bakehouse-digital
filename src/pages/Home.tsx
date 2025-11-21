@@ -75,60 +75,60 @@ const Home = () => {
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-30">
           <ChevronDown className="h-8 w-8 text-title-gold" />
         </div>
-      </section>
 
-      {/* Section Divider with Product Images */}
-      <div className="relative -mt-24 mb-[-4px]">
-        {/* Layered SVG Effect */}
-        <div className="relative w-full leading-[0] block scale-110 overflow-hidden">
-          {/* Layer 1 - Background (15% opacity, displaced up) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-15 -translate-y-6"
-            aria-hidden="true"
-          />
-          {/* Layer 2 - Middle (30% opacity, slightly displaced) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-30 -translate-y-3"
-            aria-hidden="true"
-          />
-          {/* Layer 3 - Front (100% opacity, main divider) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block relative"
-          />
-        </div>
-        
-        {/* Product Images - Positioned at the divider line */}
-        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-50">
-          <div className="container mx-auto px-4 flex justify-center md:justify-between items-center">
-            {/* Bread Basket - Single Image - Hidden on mobile */}
-            <div className="hidden md:block relative animate-fade-in" style={{ animationDelay: "1s" }}>
-              <img 
-                src={heroBreadBasket} 
-                alt="Pães Artesanais" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
-              />
-            </div>
-            
-            {/* Coxinhas - Single Image - Centered on mobile */}
-            <div className="relative animate-fade-in" style={{ animationDelay: "1.2s" }}>
-              <img 
-                src={heroCoxinhas} 
-                alt="Coxinhas" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
-              />
+        {/* Section Divider with Product Images - At bottom of hero */}
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-40">
+          {/* Layered SVG Effect */}
+          <div className="relative w-full leading-[0] block">
+            {/* Layer 1 - Front (100% opacity, main divider) */}
+            <img 
+              src={sectionDivider} 
+              alt="" 
+              className="w-full h-auto block relative"
+            />
+            {/* Layer 2 - Middle (40% opacity, displaced down) */}
+            <img 
+              src={sectionDivider} 
+              alt="" 
+              className="w-full h-auto block absolute top-0 left-0 opacity-40 translate-y-3"
+              aria-hidden="true"
+            />
+            {/* Layer 3 - Background (20% opacity, displaced down more) */}
+            <img 
+              src={sectionDivider} 
+              alt="" 
+              className="w-full h-auto block absolute top-0 left-0 opacity-20 translate-y-6"
+              aria-hidden="true"
+            />
+          </div>
+          
+          {/* Product Images - Positioned at the divider line */}
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-50">
+            <div className="container mx-auto px-4 flex justify-center md:justify-between items-center">
+              {/* Bread Basket - Single Image - Hidden on mobile */}
+              <div className="hidden md:block relative animate-fade-in" style={{ animationDelay: "1s" }}>
+                <img 
+                  src={heroBreadBasket} 
+                  alt="Pães Artesanais" 
+                  className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+                />
+              </div>
+              
+              {/* Coxinhas - Single Image - Centered on mobile */}
+              <div className="relative animate-fade-in" style={{ animationDelay: "1.2s" }}>
+                <img 
+                  src={heroCoxinhas} 
+                  alt="Coxinhas" 
+                  className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Categories Section */}
-      <section className="py-20 container mx-auto px-4 -mt-1" style={{ backgroundColor: '#ECE8E0' }}>
+      <section className="pt-32 pb-20 container mx-auto px-4" style={{ backgroundColor: '#ECE8E0' }}>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Produtos
