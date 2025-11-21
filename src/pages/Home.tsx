@@ -4,6 +4,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
+import sectionDivider from "@/assets/section-divider.svg";
 import productBread from "@/assets/product-bread.jpg";
 import productCookies from "@/assets/product-cookies.jpg";
 import productSweets from "@/assets/product-sweets.jpg";
@@ -41,20 +42,6 @@ const Home = () => {
         {/* Filtro colorido nas cores do site + overlay escuro */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#3D1F0F]/80 via-[#5C2E14]/70 to-[#7A3E1A]/60" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent" />
-        
-        {/* Product Images - Left Side */}
-        <div className="absolute left-0 bottom-0 h-[300px] lg:h-[400px] hidden lg:block animate-fade-in z-10 -ml-8" style={{
-        animationDelay: "1s"
-      }}>
-          <img src={heroBreadBasket} alt="Pães Artesanais" className="h-full w-auto object-contain" />
-        </div>
-        
-        {/* Product Images - Right Side */}
-        <div className="absolute right-0 bottom-0 h-[300px] lg:h-[400px] hidden lg:block animate-fade-in z-10 -mr-8" style={{
-        animationDelay: "1.2s"
-      }}>
-          <img src={heroCoxinhas} alt="Coxinhas" className="h-full w-auto object-contain" />
-        </div>
 
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
           <div className="text-center logo-entrance mb-12">
@@ -89,6 +76,26 @@ const Home = () => {
           <ChevronDown className="h-8 w-8 text-title-gold" />
         </div>
       </section>
+
+      {/* Section Divider with Product Images */}
+      <div className="relative">
+        <div className="w-full leading-[0]">
+          <img src={sectionDivider} alt="" className="w-full h-auto block" />
+        </div>
+        
+        {/* Product Images - Positioned at the divider line */}
+        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-20">
+          <div className="container mx-auto px-4 flex justify-between items-center">
+            <div className="animate-fade-in" style={{ animationDelay: "1s" }}>
+              <img src={heroBreadBasket} alt="Pães Artesanais" className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl" />
+            </div>
+            
+            <div className="animate-fade-in" style={{ animationDelay: "1.2s" }}>
+              <img src={heroCoxinhas} alt="Coxinhas" className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Categories Section */}
       <section className="py-20 container mx-auto px-4">
