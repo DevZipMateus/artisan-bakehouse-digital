@@ -141,4 +141,21 @@ All colors MUST be HSL.
     transform: translateY(-4px);
     box-shadow: var(--shadow-strong);
   }
+  
+  .logo-entrance {
+    animation: logo-appear 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  
+  @keyframes logo-appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.8) translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
 }
