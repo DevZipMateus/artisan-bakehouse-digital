@@ -26,7 +26,7 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[650px] md:h-[750px] overflow-hidden bg-gradient-to-b from-[#2d1810] via-[#3d2418] to-[#4a2e1f]">
+      <section className="relative h-screen overflow-hidden bg-gradient-to-b from-[#3D1F0F] via-[#5C2E14] to-[#7A3E1A]">
         {/* Background Video - Preparado para receber vídeo do GitHub */}
         {/* <video 
           autoPlay 
@@ -39,25 +39,25 @@ const Home = () => {
         </video> */}
         
         {/* Dark overlay para melhorar legibilidade do texto sobre o vídeo */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent" />
         
-        {/* Product Images - Left Side - Mesmo tamanho */}
-        <div className="absolute left-0 bottom-0 h-[400px] lg:h-[500px] hidden lg:block animate-fade-in z-10" style={{
+        {/* Product Images - Left Side */}
+        <div className="absolute left-0 bottom-0 h-[450px] lg:h-[550px] hidden lg:block animate-fade-in z-10 -ml-8" style={{
         animationDelay: "1s"
       }}>
           <img src={heroBreadBasket} alt="Pães Artesanais" className="h-full w-auto object-contain" />
         </div>
         
-        {/* Product Images - Right Side - Mesmo tamanho */}
-        <div className="absolute right-0 bottom-0 h-[400px] lg:h-[500px] hidden lg:block animate-fade-in z-10" style={{
+        {/* Product Images - Right Side */}
+        <div className="absolute right-0 bottom-0 h-[450px] lg:h-[550px] hidden lg:block animate-fade-in z-10 -mr-8" style={{
         animationDelay: "1.2s"
       }}>
           <img src={heroCoxinhas} alt="Coxinhas" className="h-full w-auto object-contain" />
         </div>
 
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
-          <div className="text-center logo-entrance">
-            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-64 md:w-80 lg:w-96 xl:w-[420px] mx-auto mb-8" />
+          <div className="text-center logo-entrance mb-12">
+            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[450px] xl:w-[500px] mx-auto drop-shadow-2xl" />
           </div>
           
           <div className="text-center animate-fade-in" style={{
@@ -84,8 +84,8 @@ const Home = () => {
         </div>
         
         {/* Scroll Down Arrow */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-secondary" />
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-30">
+          <ChevronDown className="h-8 w-8 text-title-gold" />
         </div>
       </section>
 
