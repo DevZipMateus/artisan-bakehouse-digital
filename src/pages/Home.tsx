@@ -43,14 +43,14 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent" />
         
         {/* Product Images - Left Side */}
-        <div className="absolute left-0 bottom-0 h-[450px] lg:h-[550px] hidden lg:block animate-fade-in z-10 -ml-8" style={{
+        <div className="absolute left-0 bottom-0 h-[300px] lg:h-[400px] hidden lg:block animate-fade-in z-10 -ml-8" style={{
         animationDelay: "1s"
       }}>
           <img src={heroBreadBasket} alt="Pães Artesanais" className="h-full w-auto object-contain" />
         </div>
         
         {/* Product Images - Right Side */}
-        <div className="absolute right-0 bottom-0 h-[450px] lg:h-[550px] hidden lg:block animate-fade-in z-10 -mr-8" style={{
+        <div className="absolute right-0 bottom-0 h-[300px] lg:h-[400px] hidden lg:block animate-fade-in z-10 -mr-8" style={{
         animationDelay: "1.2s"
       }}>
           <img src={heroCoxinhas} alt="Coxinhas" className="h-full w-auto object-contain" />
