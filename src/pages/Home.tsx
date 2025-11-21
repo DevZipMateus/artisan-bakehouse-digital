@@ -48,27 +48,6 @@ const Home = () => {
             <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[450px] xl:w-[500px] mx-auto drop-shadow-2xl" />
           </div>
           
-          <div className="text-center animate-fade-in" style={{
-          animationDelay: "0.4s"
-        }}>
-            
-          </div>
-          
-          <div className="hidden md:flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in" style={{
-          animationDelay: "0.8s"
-        }}>
-            <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20BA5A] text-white border-0 font-semibold">
-                Chama no WhatsApp
-              </Button>
-            </a>
-            <Link to="/produtos">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-card/10 backdrop-blur-sm border-card hover:bg-card/20 text-card group">
-                Ver Produtos
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-          </div>
         </div>
         
         {/* Scroll Down Arrow */}
@@ -128,7 +107,7 @@ const Home = () => {
       </div>
 
       {/* Categories Section */}
-      <section className="py-20 container mx-auto px-4 -mt-1" style={{ backgroundColor: '#ECE8E0' }}>
+      <section className="py-20 container mx-auto px-4 -mt-1">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Produtos
