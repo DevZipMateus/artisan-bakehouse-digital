@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, MessageCircle } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
 import sectionDivider from "@/assets/section-divider.svg";
 import kroningProducts from "@/assets/kroning-products.png";
+import bakeryCookies from "@/assets/bakery-cookies.jpg";
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -114,6 +115,16 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Parallax Image Section */}
+      <section className="relative h-[400px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${bakeryCookies})` }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 gradient-warm">
         <div className="container mx-auto px-4 text-center animate-fade-in">
@@ -121,13 +132,22 @@ const Home = () => {
             Faça seu Pedido Agora
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Entre em contato pelo WhatsApp e garanta produtos fresquinhos para você e sua família
+            Entre em contato pelo WhatsApp ou visite nossa vitrine online
           </p>
-          <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="outline" className="bg-card hover:bg-card/90 text-primary border-0 font-semibold">
-              Chama no WhatsApp
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="https://wa.me/5553984086150?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-[#25D366] hover:bg-[#20BA5A] text-white border-0 font-semibold shadow-lg hover:shadow-xl transition-all">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Chama no WhatsApp
+              </Button>
+            </a>
+            <Link to="/vitrine">
+              <Button size="lg" variant="outline" className="bg-card hover:bg-card/90 text-primary border-2 border-primary font-semibold shadow-lg hover:shadow-xl transition-all">
+                Ver Vitrine Online
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>;

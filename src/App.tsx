@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Vitrine from "./pages/Vitrine";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/produtos" element={<Products />} />
               <Route path="/quem-somos" element={<About />} />
               <Route path="/contato" element={<Contact />} />
+              <Route path="/vitrine" element={<Vitrine />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
