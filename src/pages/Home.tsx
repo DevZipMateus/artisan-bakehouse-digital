@@ -27,8 +27,8 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden bg-gradient-to-b from-[#3D1F0F] via-[#5C2E14] to-[#7A3E1A]">
-        {/* Background Video - Preparado para receber vídeo do GitHub */}
-        {/* <video 
+        {/* Background Video */}
+        <video 
           autoPlay 
           loop 
           muted 
@@ -36,10 +36,11 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video-hero.mp4" type="video/mp4" />
-        </video> */}
+        </video>
         
-        {/* Dark overlay para melhorar legibilidade do texto sobre o vídeo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent" />
+        {/* Filtro colorido nas cores do site + overlay escuro */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3D1F0F]/80 via-[#5C2E14]/70 to-[#7A3E1A]/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent" />
         
         {/* Product Images - Left Side */}
         <div className="absolute left-0 bottom-0 h-[450px] lg:h-[550px] hidden lg:block animate-fade-in z-10 -ml-8" style={{
