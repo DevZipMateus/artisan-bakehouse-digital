@@ -78,9 +78,9 @@ const Home = () => {
       </section>
 
       {/* Section Divider with Product Images */}
-      <div className="relative -mt-24 mb-[-4px] overflow-hidden">
+      <div className="relative -mt-24 mb-[-4px]">
         {/* Layered SVG Effect */}
-        <div className="relative w-full leading-[0] block scale-110">
+        <div className="relative w-full leading-[0] block scale-110 overflow-hidden">
           {/* Layer 1 - Background (15% opacity, displaced up) */}
           <img 
             src={sectionDivider} 
