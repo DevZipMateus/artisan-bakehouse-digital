@@ -25,7 +25,7 @@ const Home = () => {
     image: productSweets,
     link: "/produtos#doces"
   }];
-  return <div className="min-h-screen">
+  return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[70vh] md:h-[75vh] overflow-hidden bg-gradient-to-b from-[#3D1F0F] via-[#5C2E14] to-[#7A3E1A]">
         {/* Background Video */}
@@ -54,7 +54,7 @@ const Home = () => {
             
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in" style={{
+          <div className="hidden md:flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in" style={{
           animationDelay: "0.8s"
         }}>
             <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
