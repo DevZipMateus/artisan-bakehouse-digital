@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Kroning-inspired bakery color palette */
-    --background: 40 30% 95%; /* Bege/Off-White - clean flour tone */
+    --background: 40 30% 90%; /* #ECE8E0 - Bege/Off-White */
     --foreground: 25 30% 15%; /* Marrom Escuro - dark text */
 
     --card: 40 25% 97%;
