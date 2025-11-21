@@ -106,7 +106,7 @@ const Home = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="relative pt-32 pb-20 container mx-auto px-4" style={{ backgroundColor: '#ECE8E0' }}>
+      <section className="relative pt-48 pb-20 container mx-auto px-4" style={{ backgroundColor: '#ECE8E0' }}>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Produtos
