@@ -4,7 +4,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
-import sectionDivider from "@/assets/section-divider.svg";
+import SectionDivider from "@/components/SectionDivider";
 import productBread from "@/assets/product-bread.jpg";
 import productCookies from "@/assets/product-cookies.jpg";
 import productSweets from "@/assets/product-sweets.jpg";
@@ -78,29 +78,7 @@ const Home = () => {
 
         {/* Section Divider with Product Images - At bottom of hero */}
         <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-40">
-          {/* Layered SVG Effect */}
-          <div className="relative w-full leading-[0] block">
-            {/* Layer 1 - Front (100% opacity, main divider) */}
-            <img 
-              src={sectionDivider} 
-              alt="" 
-              className="w-full h-auto block relative"
-            />
-            {/* Layer 2 - Middle (60% opacity, displaced down) */}
-            <img 
-              src={sectionDivider} 
-              alt="" 
-              className="w-full h-auto block absolute top-0 left-0 opacity-60 translate-y-4"
-              aria-hidden="true"
-            />
-            {/* Layer 3 - Background (30% opacity, displaced down more) */}
-            <img 
-              src={sectionDivider} 
-              alt="" 
-              className="w-full h-auto block absolute top-0 left-0 opacity-30 translate-y-8"
-              aria-hidden="true"
-            />
-          </div>
+          <SectionDivider color="#ECE8E0" showDepthEffect={true} />
           
           {/* Product Images - Positioned at the divider line */}
           <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-50">
@@ -128,7 +106,7 @@ const Home = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="pt-32 pb-20 container mx-auto px-4" style={{ backgroundColor: '#ECE8E0' }}>
+      <section className="relative pt-32 pb-20 container mx-auto px-4" style={{ backgroundColor: '#ECE8E0' }}>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Produtos
@@ -157,8 +135,17 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Divider before CTA */}
+      <div className="relative -mb-1">
+        <SectionDivider 
+          color="linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%)" 
+          flip={false}
+          showDepthEffect={true}
+        />
+      </div>
+
       {/* CTA Section */}
-      <section className="py-20 gradient-warm">
+      <section className="relative py-20 gradient-warm">
         <div className="container mx-auto px-4 text-center animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
             Faça seu Pedido Agora

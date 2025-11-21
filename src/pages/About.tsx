@@ -1,5 +1,6 @@
 import { Heart, Award, Users, Clock } from "lucide-react";
 import aboutImage from "@/assets/about-bakery.jpg";
+import SectionDivider from "@/components/SectionDivider";
 
 const About = () => {
   const values = [
@@ -79,8 +80,17 @@ const About = () => {
           </div>
         </div>
 
+        {/* Divider before Values */}
+        <div className="relative -mb-1 -mx-4">
+          <SectionDivider 
+            color="#F5F5F0" 
+            flip={false}
+            showDepthEffect={true}
+          />
+        </div>
+
         {/* Values Section */}
-        <div className="mb-20">
+        <div className="relative mb-20 -mt-16 pt-20 pb-12 -mx-4 px-4" style={{ backgroundColor: '#F5F5F0' }}>
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
               Nossos Valores
@@ -109,8 +119,17 @@ const About = () => {
           </div>
         </div>
 
+        {/* Divider before CTA */}
+        <div className="relative -mb-1 -mx-4">
+          <SectionDivider 
+            color="linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%)" 
+            flip={true}
+            showDepthEffect={true}
+          />
+        </div>
+
         {/* CTA Section */}
-        <div className="text-center gradient-warm rounded-2xl p-12 shadow-strong animate-fade-in">
+        <div className="relative text-center gradient-warm rounded-2xl p-12 shadow-strong animate-fade-in -mt-16">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Visite Nossa Padaria
           </h2>

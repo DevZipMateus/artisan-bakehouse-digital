@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import productBread from "@/assets/product-bread.jpg";
 import productCookies from "@/assets/product-cookies.jpg";
 import productSweets from "@/assets/product-sweets.jpg";
+import SectionDivider from "@/components/SectionDivider";
 
 const Products = () => {
   const location = useLocation();
@@ -115,8 +116,21 @@ const Products = () => {
     ],
   };
 
-  const renderCategory = (title: string, id: string, items: typeof products.paes) => (
-    <section id={id} className="mb-20 scroll-mt-24">
+  const renderCategory = (title: string, id: string, items: typeof products.paes, showDivider: boolean = false) => (
+    <>
+      {showDivider && (
+        <div className="relative -mb-1 -mx-4">
+          <SectionDivider 
+            color="#FFFFFF" 
+            flip={false}
+            showDepthEffect={true}
+          />
+        </div>
+      )}
+      <section 
+        id={id} 
+        className={`mb-20 scroll-mt-24 ${showDivider ? 'relative -mt-16 pt-20 pb-12 -mx-4 px-4 bg-white' : ''}`}
+      >
       <div className="mb-12 animate-fade-in">
         <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
           {title}
@@ -148,6 +162,7 @@ const Products = () => {
         ))}
       </div>
     </section>
+    </>
   );
 
   return (
@@ -163,9 +178,9 @@ const Products = () => {
           </p>
         </div>
 
-        {renderCategory("Pães Artesanais", "paes", products.paes)}
-        {renderCategory("Bolachas", "bolachas", products.bolachas)}
-        {renderCategory("Doces & Massas", "doces", products.doces)}
+        {renderCategory("Pães Artesanais", "paes", products.paes, false)}
+        {renderCategory("Bolachas", "bolachas", products.bolachas, true)}
+        {renderCategory("Doces & Massas", "doces", products.doces, true)}
       </div>
     </div>
   );

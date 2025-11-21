@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import SectionDivider from "@/components/SectionDivider";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -201,8 +202,17 @@ const Contact = () => {
           </div>
         </div>
 
+        {/* Divider before Map */}
+        <div className="relative -mb-1 -mx-4">
+          <SectionDivider 
+            color="#F8F8F6" 
+            flip={false}
+            showDepthEffect={true}
+          />
+        </div>
+
         {/* Map */}
-        <div className="animate-fade-in">
+        <div className="relative animate-fade-in -mt-16 pt-20 pb-12 -mx-4 px-4" style={{ backgroundColor: '#F8F8F6' }}>
           <h2 className="font-display text-3xl font-bold text-primary mb-8 text-center">
             Nossa Localização
           </h2>
