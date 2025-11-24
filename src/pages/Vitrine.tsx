@@ -8,17 +8,6 @@ const Vitrine = () => {
     document.documentElement.style.height = "100%";
     document.body.style.height = "100%";
 
-    // Ensure badge stays fixed at bottom
-    const badgeElement = document.getElementById("montesite-footer-badge");
-    if (badgeElement) {
-      badgeElement.style.position = "fixed";
-      badgeElement.style.bottom = "0";
-      badgeElement.style.left = "0";
-      badgeElement.style.width = "100%";
-      badgeElement.style.height = "63px";
-      badgeElement.style.zIndex = "10";
-    }
-
     // Cleanup function
     return () => {
       document.documentElement.style.overflow = "auto";
@@ -29,7 +18,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed top-20 bottom-[63px] left-0 right-0 w-full h-[calc(100vh-143px)] overflow-hidden">
+    <div className="fixed top-20 bottom-0 left-0 right-0 w-full h-[calc(100vh-80px)] overflow-hidden">
         <iframe
           src="https://padariakroning.egestor.com.br/vitrine/"
           className="w-full h-full border-0"
