@@ -76,7 +76,7 @@ const Home = () => {
             <img 
               src={heroBreadBasket} 
               alt="Pães Artesanais" 
-              className="h-[200px] lg:h-[280px] xl:h-[300px] w-auto object-contain drop-shadow-2xl"
+              className="h-[200px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
           
@@ -86,7 +86,7 @@ const Home = () => {
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
-              className="h-[200px] lg:h-[280px] xl:h-[300px] w-auto object-contain drop-shadow-2xl"
+              className="h-[200px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
