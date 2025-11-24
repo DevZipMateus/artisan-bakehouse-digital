@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown, MessageCircle } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
 import sectionDivider from "@/assets/section-divider.svg";
 import kroningProducts from "@/assets/kroning-products.png";
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
+import whatsappIcon from "@/assets/whatsapp-icon.png";
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -136,9 +137,12 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://wa.me/5553984086150?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-[#25D366] hover:bg-[#20BA5A] text-white border-0 font-semibold shadow-lg hover:shadow-xl transition-all">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Chama no WhatsApp
+              <Button size="lg" className="bg-transparent hover:bg-transparent border-0 font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 p-0">
+                <img 
+                  src={whatsappIcon} 
+                  alt="WhatsApp" 
+                  className="h-14 w-14 md:h-16 md:w-16 object-cover"
+                />
               </Button>
             </a>
             <Link to="/vitrine">
