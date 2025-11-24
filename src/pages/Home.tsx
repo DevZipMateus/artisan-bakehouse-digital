@@ -71,8 +71,8 @@ const Home = () => {
         {/* Product Images - Positioned at the divider line */}
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-10">
           {/* Bread Basket - Left Side */}
-          <div className="hidden md:block absolute left-8 lg:left-16 xl:left-24 top-1/2 -translate-y-1/2 animate-fade-in" 
-               style={{ animationDelay: "1s" }}>
+          <div className="hidden md:block absolute left-8 lg:left-16 xl:left-24 top-1/2 animate-slide-in-left" 
+               style={{ animationDelay: "0.8s" }}>
             <img 
               src={heroBreadBasket} 
               alt="Pães Artesanais" 
@@ -81,8 +81,8 @@ const Home = () => {
           </div>
           
           {/* Coxinhas - Right Side (Centered on mobile) */}
-          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-1/2 -translate-y-1/2 animate-fade-in" 
-               style={{ animationDelay: "1.2s" }}>
+          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-1/2 md:animate-slide-in-right animate-fade-in" 
+               style={{ animationDelay: "1s" }}>
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
