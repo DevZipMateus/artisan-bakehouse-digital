@@ -95,7 +95,7 @@ const Home = () => {
       {/* Products Section */}
       <section className="py-20 container mx-auto px-4 -mt-1">
         <div className="text-center mb-12 animate-fade-in px-4">
-          <h2 className="font-display text-4xl md:text-6xl font-bold text-primary hover:text-primary transition-none">
+          <h2 className="font-display text-4xl md:text-6xl font-bold text-[#480E0A] hover:text-[#480E0A] transition-none">
             Qualidade e Tradição na Sua Mesa
           </h2>
         </div>
