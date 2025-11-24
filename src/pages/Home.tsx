@@ -31,7 +31,7 @@ const Home = () => {
 
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
           <div className="text-center logo-entrance mb-12">
-            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[420px] xl:w-[460px] 2xl:w-[500px] mx-auto drop-shadow-2xl" />
+            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[360px] xl:w-[400px] 2xl:w-[500px] mx-auto drop-shadow-2xl" />
           </div>
           
         </div>
