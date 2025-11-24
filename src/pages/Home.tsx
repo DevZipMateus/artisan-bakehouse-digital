@@ -9,6 +9,7 @@ import kroningProducts from "@/assets/kroning-products.png";
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 import wheatPattern from "@/assets/wheat-pattern-bg.png";
+import parallaxBreads from "@/assets/parallax-breads.jpg";
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -159,6 +160,16 @@ const Home = () => {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Parallax Image Section - Before Footer */}
+      <section className="relative h-[400px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${parallaxBreads})` }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
         </div>
       </section>
     </div>;
