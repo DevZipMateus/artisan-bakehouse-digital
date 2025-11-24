@@ -142,12 +142,13 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://wa.me/5553984086150?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-transparent hover:bg-transparent border-0 font-semibold shadow-lg hover:shadow-2xl transition-all hover:scale-110 p-0 group">
+              <Button size="lg" className="bg-transparent hover:bg-transparent border-0 font-semibold shadow-lg hover:shadow-2xl transition-all hover:scale-110 px-6 py-3 group flex items-center gap-3">
                 <img 
                   src={whatsappIcon} 
                   alt="WhatsApp" 
                   className="h-14 w-14 md:h-16 md:w-16 object-cover transition-transform group-hover:rotate-6"
                 />
+                <span className="text-primary-foreground text-lg md:text-xl font-bold">Chama no WhatsApp</span>
               </Button>
             </a>
             <Link to="/vitrine">
