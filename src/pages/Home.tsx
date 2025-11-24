@@ -148,7 +148,7 @@ const Home = () => {
                   alt="WhatsApp" 
                   className="h-14 w-14 md:h-16 md:w-16 object-cover transition-transform group-hover:rotate-6"
                 />
-                <span className="text-primary-foreground text-lg md:text-xl font-bold">Chama no WhatsApp</span>
+                <span className="text-primary text-lg md:text-xl font-bold">Chama no WhatsApp</span>
               </Button>
             </a>
             <Link to="/vitrine">
