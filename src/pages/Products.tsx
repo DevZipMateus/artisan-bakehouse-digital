@@ -212,14 +212,14 @@ const Products = () => {
         <div className="h-1 w-24 bg-secondary rounded-full" />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {items.map((product, index) => (
           <div
             key={index}
             className="group bg-card rounded-xl overflow-hidden shadow-medium hover-lift animate-fade-in"
             style={{ animationDelay: `${index * 50}ms` }}
           >
-            <div className="aspect-square overflow-hidden">
+            <div className="aspect-square overflow-hidden bg-muted">
               <img
                 src={product.image}
                 alt={product.name}

@@ -31,7 +31,7 @@ const Home = () => {
 
         <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center z-20">
           <div className="text-center logo-entrance mb-12">
-            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[450px] xl:w-[500px] mx-auto drop-shadow-2xl" />
+            <img src={logoKroning} alt="Logo Padaria Artesanal" className="w-72 md:w-96 lg:w-[420px] xl:w-[460px] 2xl:w-[500px] mx-auto drop-shadow-2xl" />
           </div>
           
         </div>
@@ -76,7 +76,7 @@ const Home = () => {
             <img 
               src={heroBreadBasket} 
               alt="Pães Artesanais" 
-              className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+              className="h-[200px] lg:h-[280px] xl:h-[300px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
           
@@ -86,7 +86,7 @@ const Home = () => {
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
-              className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+              className="h-[200px] lg:h-[280px] xl:h-[300px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
