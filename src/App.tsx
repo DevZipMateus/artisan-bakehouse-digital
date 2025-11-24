@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import About from "./pages/About";
@@ -34,6 +35,7 @@ const AppContent = () => {
       </main>
       {!isVitrinePage && <Footer />}
       <WhatsAppButton />
+      <ScrollToTopButton />
     </div>
   );
 };
