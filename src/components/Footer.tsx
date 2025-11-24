@@ -1,10 +1,16 @@
 import { Instagram, Facebook } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
+import wheatFooter from "@/assets/wheat-footer.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-header-red mt-20">
-      <div className="container mx-auto px-4 py-16">
+    <footer className="relative mt-20 overflow-hidden" style={{ backgroundColor: '#480E0A' }}>
+      <img 
+        src={wheatFooter} 
+        alt="" 
+        className="absolute left-0 top-0 h-full w-auto object-cover opacity-20"
+      />
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="flex flex-col items-center space-y-8">
           {/* Logo */}
           <img 
