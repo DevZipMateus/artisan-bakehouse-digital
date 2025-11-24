@@ -8,6 +8,7 @@ import sectionDivider from "@/assets/section-divider.svg";
 import kroningProducts from "@/assets/kroning-products.png";
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
+import wheatPattern from "@/assets/wheat-pattern-bg.png";
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -127,8 +128,12 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-warm">
-        <div className="container mx-auto px-4 text-center animate-fade-in">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-repeat"
+          style={{ backgroundImage: `url(${wheatPattern})` }}
+        />
+        <div className="relative container mx-auto px-4 text-center animate-fade-in z-10">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
             Faça seu Pedido Agora
           </h2>
