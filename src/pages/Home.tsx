@@ -171,6 +171,13 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/40" />
         </div>
+        <div className="relative h-full flex items-center justify-center z-10">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white drop-shadow-2xl animate-fade-in">
+              Produtos de qualidade, e com a tradição de mais de uma década
+            </h2>
+          </div>
+        </div>
       </section>
     </div>;
 };
