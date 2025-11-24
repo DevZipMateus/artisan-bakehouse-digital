@@ -1,49 +1,7 @@
-import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validação básica
-    if (!formData.name || !formData.phone || !formData.message) {
-      toast({
-        title: "Campos obrigatórios",
-        description: "Por favor, preencha todos os campos obrigatórios.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Simular envio
-    toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
-    });
-
-    // Limpar formulário
-    setFormData({ name: "", phone: "", email: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   const contactInfo = [
     {
       icon: MapPin,
@@ -81,14 +39,14 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="max-w-3xl mx-auto space-y-12 mb-16">
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in">
             <div>
-              <h2 className="font-display text-3xl font-bold text-primary mb-8">
+              <h2 className="font-display text-3xl font-bold text-primary mb-8 text-center">
                 Informações de Contato
               </h2>
-              <div className="space-y-6">
+              <div className="grid sm:grid-cols-2 gap-6">
                 {contactInfo.map((info, index) => (
                   <div
                     key={index}
@@ -115,7 +73,7 @@ const Contact = () => {
                 Entre em contato pelo WhatsApp para pedidos e encomendas
               </p>
               <a
-                href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
+                href="https://api.whatsapp.com/send/?phone=53984086150&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -123,80 +81,6 @@ const Contact = () => {
                   Chama no WhatsApp
                 </Button>
               </a>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <div className="bg-card rounded-xl shadow-strong p-8">
-              <h2 className="font-display text-3xl font-bold text-primary mb-6">
-                Envie uma Mensagem
-              </h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Nome *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Seu nome completo"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                    Telefone *
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(11) 98765-4321"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    E-mail
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="seu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Mensagem *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Digite sua mensagem..."
-                    rows={5}
-                    required
-                  />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full gradient-warm border-0 text-primary-foreground font-semibold">
-                  Enviar Mensagem
-                </Button>
-              </form>
             </div>
           </div>
         </div>
