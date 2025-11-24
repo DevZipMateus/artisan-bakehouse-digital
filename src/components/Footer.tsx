@@ -67,7 +67,15 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-white/80 text-sm font-body">
-            ©{new Date().getFullYear()} . Criado por Vagner Design
+            ©{new Date().getFullYear()} . Desenvolvido por{" "}
+            <a 
+              href="https://lp.montesite.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-title-gold hover:text-white transition-colors"
+            >
+              MonteSite
+            </a>
           </p>
         </div>
       </div>
