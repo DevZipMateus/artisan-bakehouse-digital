@@ -70,24 +70,24 @@ const Home = () => {
         
         {/* Product Images - Positioned at the divider line */}
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-10">
-          <div className="container mx-auto px-4 flex justify-center md:justify-between items-center">
-            {/* Bread Basket - Single Image - Hidden on mobile */}
-            <div className="hidden md:block relative animate-fade-in" style={{ animationDelay: "1s" }}>
-              <img 
-                src={heroBreadBasket} 
-                alt="Pães Artesanais" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
-              />
-            </div>
-            
-            {/* Coxinhas - Single Image - Centered on mobile */}
-            <div className="relative animate-fade-in" style={{ animationDelay: "1.2s" }}>
-              <img 
-                src={heroCoxinhas} 
-                alt="Coxinhas" 
-                className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
-              />
-            </div>
+          {/* Bread Basket - Left Side */}
+          <div className="hidden md:block absolute left-8 lg:left-16 xl:left-24 top-1/2 -translate-y-1/2 animate-fade-in" 
+               style={{ animationDelay: "1s" }}>
+            <img 
+              src={heroBreadBasket} 
+              alt="Pães Artesanais" 
+              className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+            />
+          </div>
+          
+          {/* Coxinhas - Right Side (Centered on mobile) */}
+          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-1/2 -translate-y-1/2 animate-fade-in" 
+               style={{ animationDelay: "1.2s" }}>
+            <img 
+              src={heroCoxinhas} 
+              alt="Coxinhas" 
+              className="h-[250px] lg:h-[350px] w-auto object-contain drop-shadow-2xl"
+            />
           </div>
         </div>
       </div>
