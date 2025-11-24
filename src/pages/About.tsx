@@ -1,13 +1,8 @@
-import { Heart, Award, Users, Clock } from "lucide-react";
+import { Heart, Award, Users, Leaf, Lightbulb, Target, Eye } from "lucide-react";
 import aboutImage from "@/assets/about-bakery.jpg";
 
 const About = () => {
   const values = [
-    {
-      icon: Heart,
-      title: "Paixão",
-      description: "Amor pelo que fazemos em cada receita",
-    },
     {
       icon: Award,
       title: "Qualidade",
@@ -19,9 +14,19 @@ const About = () => {
       description: "Receitas passadas de geração em geração",
     },
     {
-      icon: Clock,
-      title: "Dedicação",
-      description: "Mais de 10 anos servindo com excelência",
+      icon: Leaf,
+      title: "Sustentabilidade",
+      description: "Compromisso com o meio ambiente e práticas conscientes",
+    },
+    {
+      icon: Heart,
+      title: "Atendimento",
+      description: "Acolhimento e cuidado com cada cliente",
+    },
+    {
+      icon: Lightbulb,
+      title: "Inovação",
+      description: "Sempre buscando novas formas de surpreender",
     },
   ];
 
@@ -50,32 +55,59 @@ const About = () => {
 
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "200ms" }}>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">
-              Mais de Uma Década de Tradição
+              Nossa Filosofia
             </h2>
             
             <p className="text-lg text-foreground leading-relaxed">
-              Há mais de 10 anos, nascemos com um propósito simples mas poderoso: levar para sua
-              mesa o verdadeiro sabor de pão artesanal, feito com dedicação e carinho.
+              Acreditamos que a alimentação é um elemento essencial para o bem-estar e a felicidade das pessoas. Nossa missão vai além de simplesmente oferecer pães frescos e produtos de qualidade.
             </p>
 
             <p className="text-lg text-foreground leading-relaxed">
-              Nossa jornada começou com receitas tradicionais passadas de geração em geração,
-              combinadas com técnicas modernas de panificação. Cada pão, bolacha e doce que sai
-              do nosso forno carrega não apenas ingredientes de qualidade, mas também nossa
-              história e paixão.
+              Queremos criar um espaço onde a comunidade se encontre, compartilhe experiências e celebre momentos especiais. Acreditamos que cada produto que oferecemos deve ter uma história, refletindo nosso compromisso com a qualidade, a tradição e a sustentabilidade.
             </p>
 
             <p className="text-lg text-foreground leading-relaxed">
-              Acreditamos que a verdadeira qualidade está nos detalhes: na seleção cuidadosa
-              dos ingredientes, no tempo de fermentação respeitado, no cuidado artesanal de
-              cada etapa do processo. É isso que nos torna únicos e especiais para nossos clientes.
+              Queremos ser um ponto de encontro onde nossos clientes possam não apenas adquirir alimentos, mas também encontrar inspiração, descobrir novos sabores.
             </p>
 
             <p className="text-lg text-foreground leading-relaxed">
-              Hoje, continuamos firmes em nosso compromisso de oferecer produtos artesanais de
-              excelência, mantendo viva a tradição da boa panificação e conquistando o coração
-              de quem valoriza o sabor autêntico e a qualidade em cada mordida.
+              Estamos aqui para promover um estilo de vida saudável, fornecendo produtos que nutrem o corpo e a alma, porque acreditamos que a verdadeira conexão acontece ao redor da sua mesa.
             </p>
+          </div>
+        </div>
+
+        {/* Mission and Vision Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+              Missão e Visão
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-card rounded-xl p-10 shadow-medium hover-lift animate-fade-in">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <Target className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="font-display text-3xl font-semibold text-primary mb-4">
+                Missão
+              </h3>
+              <p className="text-lg text-foreground leading-relaxed">
+                Oferecer produtos de alta qualidade, preparados com ingredientes selecionados e receitas tradicionais, proporcionando aos nossos clientes uma experiência acolhedora e saborosa a cada refeição.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-10 shadow-medium hover-lift animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <Eye className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="font-display text-3xl font-semibold text-primary mb-4">
+                Visão
+              </h3>
+              <p className="text-lg text-foreground leading-relaxed">
+                Ser reconhecida como uma padaria de referência na nossa comunidade, destacando-nos pela qualidade e tradição dos nossos produtos e pelo atendimento excepcional, sempre inovando e mantendo um compromisso com a saúde dos nossos clientes.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -90,7 +122,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
