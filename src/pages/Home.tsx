@@ -133,6 +133,7 @@ const Home = () => {
           className="absolute inset-0 bg-repeat"
           style={{ backgroundImage: `url(${wheatPattern})` }}
         />
+        <div className="absolute inset-0 bg-background/60" />
         <div className="relative container mx-auto px-4 text-center animate-fade-in z-10">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
             Faça seu Pedido Agora
