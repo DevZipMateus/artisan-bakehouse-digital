@@ -120,11 +120,6 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
     color: hsl(var(--title-gold));
-    transition: color 0.3s ease;
-  }
-  
-  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-    color: white;
   }
 }
 
