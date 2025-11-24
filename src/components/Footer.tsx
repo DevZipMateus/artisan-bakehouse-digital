@@ -17,7 +17,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative mt-20 overflow-hidden" style={{ backgroundColor: '#480E0A' }}>
+    <footer className="relative overflow-hidden" style={{ backgroundColor: '#480E0A' }}>
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
