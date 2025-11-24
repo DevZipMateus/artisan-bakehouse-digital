@@ -9,7 +9,6 @@ import kroningProducts from "@/assets/kroning-products.png";
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 import wheatPattern from "@/assets/wheat-pattern-bg.png";
-import parallaxBreads from "@/assets/parallax-breads.jpg";
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -159,23 +158,6 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Parallax Image Section - Before Footer */}
-      <section className="relative h-[400px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${parallaxBreads})` }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
-        <div className="relative h-full flex items-center justify-center z-10">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-title-gold drop-shadow-2xl animate-fade-in">
-              Produtos de qualidade, e com a tradição de mais de uma década
-            </h2>
           </div>
         </div>
       </section>
