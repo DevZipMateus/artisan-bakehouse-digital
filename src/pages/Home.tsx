@@ -134,10 +134,10 @@ const Home = () => {
           style={{ backgroundImage: `url(${wheatPattern})` }}
         />
         <div className="relative container mx-auto px-4 text-center animate-fade-in z-10">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
             Faça seu Pedido Agora
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground mb-8 max-w-2xl mx-auto">
             Entre em contato pelo WhatsApp ou visite nossa vitrine online
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
