@@ -13,6 +13,9 @@ const Navbar = () => {
     name: "Produtos",
     path: "/produtos"
   }, {
+    name: "Vitrine",
+    path: "/vitrine"
+  }, {
     name: "Quem Somos",
     path: "/quem-somos"
   }, {
