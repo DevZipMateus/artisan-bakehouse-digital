@@ -1,7 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import wheatIcon from "@/assets/wheat-icon.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +39,16 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-title-gold hover:bg-white/10" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden relative"
+          >
+            <div className="bg-title-gold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform">
+              <span className="text-primary font-display font-semibold text-sm tracking-wider">
+                {isMenuOpen ? "FECHAR" : "MENU"}
+              </span>
+            </div>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
