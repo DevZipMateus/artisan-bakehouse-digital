@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp Button */}
-            <div className="gradient-warm rounded-xl p-8 text-center shadow-medium">
+            <div className="bg-[hsl(var(--header-red))] rounded-xl p-8 text-center shadow-medium">
               <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
                 Faça seu Pedido Agora
               </h3>
