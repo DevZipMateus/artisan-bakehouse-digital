@@ -124,15 +124,15 @@ const About = () => {
             ))}
           </div>
         </div>
+      </div>
 
-        {/* Footer Image */}
-        <div className="mt-20 animate-fade-in">
-          <img
-            src={aboutBreadsFooter}
-            alt="Produtos da Padaria Kroning"
-            className="w-full h-auto object-cover rounded-2xl shadow-strong opacity-30"
-          />
-        </div>
+      {/* Footer Image - Full Width */}
+      <div className="mt-20 animate-fade-in w-full">
+        <img
+          src={aboutBreadsFooter}
+          alt="Produtos da Padaria Kroning"
+          className="w-full h-auto object-cover opacity-30"
+        />
       </div>
     </div>
   );
