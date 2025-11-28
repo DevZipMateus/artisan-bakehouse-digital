@@ -32,7 +32,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors relative py-2 ${isActive(link.path) ? "text-white" : "text-title-gold hover:text-white"}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors relative py-2 ${isActive(link.path) ? "text-white" : "text-title-gold hover:text-[#D69C6C]"}`}>
                 {link.name}
                 {isActive(link.path) && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-title-gold rounded-full" />}
               </Link>)}
@@ -54,7 +54,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden pb-4 animate-fade-in">
             <div className="flex flex-col space-y-3">
-              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMenuOpen(false)} className={`font-medium py-2 px-4 rounded-lg transition-colors ${isActive(link.path) ? "bg-white/20 text-white" : "text-title-gold hover:bg-white/10 hover:text-white"}`}>
+              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMenuOpen(false)} className={`font-medium py-2 px-4 rounded-lg transition-colors ${isActive(link.path) ? "bg-white/20 text-white" : "text-title-gold hover:bg-white/10 hover:text-[#D69C6C]"}`}>
                   {link.name}
                 </Link>)}
             </div>
