@@ -1,31 +1,11 @@
 import { Instagram, Facebook } from "lucide-react";
-import { useEffect, useState } from "react";
 import logoKroning from "@/assets/logo-kroning.png";
 import wheatFooter from "@/assets/wheat-footer.png";
-import breadsBackground from "@/assets/footer-breads-bg.jpg";
 
 const Footer = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <footer className="relative overflow-hidden" style={{ backgroundColor: '#480E0A' }}>
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ 
-          backgroundImage: `url(${breadsBackground})`,
-          transform: `translateY(${scrollY * 0.3}px)`,
-          opacity: 0.15
-        }}
-      />
       <img 
         src={wheatFooter} 
         alt="" 
