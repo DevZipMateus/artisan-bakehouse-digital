@@ -32,7 +32,8 @@ const Footer = () => {
               href="https://www.facebook.com/mercadoepadariakroning"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center"
+              className="w-12 h-12 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: '#480E0A' }}
             >
               <img src={facebookIcon} alt="Facebook" className="h-7 w-7" />
             </a>
@@ -40,7 +41,8 @@ const Footer = () => {
               href="https://www.instagram.com/padariakroning/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center"
+              className="w-12 h-12 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: '#480E0A' }}
             >
               <img src={instagramIcon} alt="Instagram" className="h-7 w-7" />
             </a>
