@@ -1,5 +1,6 @@
 import { Heart, Award, Users, Lightbulb, Target, Eye } from "lucide-react";
 import aboutImage from "@/assets/about-bakery.jpg";
+import aboutBreadsFooter from "@/assets/about-breads-footer.png";
 
 const About = () => {
   const values = [
@@ -133,6 +134,15 @@ const About = () => {
             Conheça nosso espaço, sinta o aroma irresistível e experimente produtos fresquinhos
             direto do forno. Será um prazer recebê-lo!
           </p>
+        </div>
+
+        {/* Footer Image */}
+        <div className="mt-20 animate-fade-in">
+          <img
+            src={aboutBreadsFooter}
+            alt="Produtos da Padaria Kroning"
+            className="w-full h-auto object-cover rounded-2xl shadow-strong"
+          />
         </div>
       </div>
     </div>
