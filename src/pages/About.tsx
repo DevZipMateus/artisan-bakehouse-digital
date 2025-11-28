@@ -27,8 +27,17 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20" style={{ backgroundColor: '#FEEFD2' }}>
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen py-20 relative" style={{ backgroundColor: '#FEEFD2' }}>
+      {/* Background Image - Full Width */}
+      <div className="absolute inset-0 flex items-end overflow-hidden">
+        <img
+          src={aboutBreadsFooter}
+          alt="Produtos da Padaria Kroning"
+          className="w-full h-auto object-cover opacity-20"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="font-display text-5xl md:text-6xl font-bold text-primary mb-6">
@@ -124,15 +133,6 @@ const About = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Footer Background Image - Full Width */}
-      <div className="w-full animate-fade-in">
-        <img
-          src={aboutBreadsFooter}
-          alt="Produtos da Padaria Kroning"
-          className="w-full h-auto object-cover opacity-30"
-        />
       </div>
     </div>
   );
