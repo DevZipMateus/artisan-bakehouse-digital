@@ -200,7 +200,7 @@ const Home = () => {
               </Button>
             </a>
             <Link to="/vitrine">
-              <Button size="lg" variant="outline" className="bg-card hover:bg-card/90 text-primary border-2 border-primary font-semibold shadow-lg hover:shadow-xl transition-all">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
                 Ver Vitrine Online
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
