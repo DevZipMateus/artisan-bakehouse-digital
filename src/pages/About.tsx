@@ -95,44 +95,47 @@ const About = () => {
           </div>
         </div>
 
-        {/* Values Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
-              Nossos Valores
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Princípios que guiam nosso trabalho diário
-            </p>
+        {/* Values Section with Background Image */}
+        <div className="mb-20 relative">
+          {/* Background Image */}
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+            <img
+              src={aboutBreadsFooter}
+              alt="Produtos da Padaria Kroning"
+              className="w-full h-auto object-cover opacity-30"
+            />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-8 shadow-medium hover-lift text-center animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
-                  <value.icon className="h-8 w-8 text-primary" />
+          {/* Values Content */}
+          <div className="relative z-10">
+            <div className="text-center mb-12 animate-fade-in">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+                Nossos Valores
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Princípios que guiam nosso trabalho diário
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {values.map((value, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-xl p-8 shadow-medium hover-lift text-center animate-fade-in"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+                    <value.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="font-display text-2xl font-semibold text-primary mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-muted-foreground">{value.description}</p>
                 </div>
-                <h3 className="font-display text-2xl font-semibold text-primary mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground">{value.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Footer Image - Full Width */}
-      <div className="mt-20 animate-fade-in w-full">
-        <img
-          src={aboutBreadsFooter}
-          alt="Produtos da Padaria Kroning"
-          className="w-full h-auto object-cover opacity-30"
-        />
       </div>
     </div>
   );
