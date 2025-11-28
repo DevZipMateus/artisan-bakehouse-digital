@@ -206,9 +206,7 @@ const Products = () => {
   const renderCategory = (title: string, id: string, items: typeof products.paes) => (
     <section id={id} className="mb-20 scroll-mt-24">
       <div className="mb-12 animate-fade-in">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
-          {title}
-        </h2>
+        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">{title}</h2>
         <div className="h-1 w-24 bg-secondary rounded-full" />
       </div>
 
@@ -242,12 +240,10 @@ const Products = () => {
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-primary mb-6">
-            Nossos Produtos
-          </h1>
+          <h1 className="font-display text-5xl md:text-6xl font-bold text-primary mb-6">Nossos Produtos</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conheça nossa linha completa de produtos artesanais. Tudo feito com ingredientes
-            selecionados e muito carinho, do forno para sua mesa.
+            Conheça nossa linha completa de produtos. Tudo feito com ingredientes selecionados e muito carinho da nossa
+            familia para a sua.
           </p>
         </div>
 
