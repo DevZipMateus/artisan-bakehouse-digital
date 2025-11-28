@@ -66,6 +66,22 @@ const Contact = () => {
                         >
                           {info.content}
                         </a>
+                      ) : info.title === "Telefone" ? (
+                        <a
+                          href="https://api.whatsapp.com/send/?phone=53984086150&text&type=phone_number&app_absent=0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground whitespace-pre-line hover:text-primary transition-colors hover:underline"
+                        >
+                          {info.content}
+                        </a>
+                      ) : info.title === "E-mail" ? (
+                        <a
+                          href="mailto:kroning@outlook.com.br"
+                          className="text-muted-foreground whitespace-pre-line hover:text-primary transition-colors hover:underline"
+                        >
+                          {info.content}
+                        </a>
                       ) : (
                         <p className="text-muted-foreground whitespace-pre-line">{info.content}</p>
                       )}
