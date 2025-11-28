@@ -6,22 +6,22 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua das Padarias, 123\nCentro - São Paulo, SP",
+      content: "Boa Vista, 6 Distrito, São Lourenço do Sul - RS",
     },
     {
       icon: Phone,
       title: "Telefone",
-      content: "(11) 98765-4321",
+      content: "53 98408.6150",
     },
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@padariaartesanal.com.br",
+      content: "kroning@outlook.com.br",
     },
     {
       icon: Clock,
       title: "Horário",
-      content: "Seg - Sáb: 6h às 20h\nDom: 6h às 14h",
+      content: "Segunda a Sábado - 7:30 às 12:00 | 13:00 às 19:30\nDomingo - 8:30 às 11:00",
     },
   ];
 
@@ -92,14 +92,14 @@ const Contact = () => {
           </h2>
           <div className="rounded-xl overflow-hidden shadow-strong h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1981!2d-46.6333824!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjkiUyA0NsKwMzgnMDAuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7!2d-51.9777!3d-31.3653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDIxJzU1LjEiUyA1McKwNTgnMzkuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização da Padaria Artesanal"
+              title="Localização da Padaria Kroning"
             />
           </div>
         </div>
