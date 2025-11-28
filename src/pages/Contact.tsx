@@ -57,7 +57,18 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">{info.title}</h3>
-                      <p className="text-muted-foreground whitespace-pre-line">{info.content}</p>
+                      {info.title === "Endereço" ? (
+                        <a
+                          href="https://www.google.com/maps/place/Mercado+e+Padaria+KRONING/@-31.2543149,-52.2122451,17z/data=!3m1!4b1!4m6!3m5!1s0x95106f6d336883a9:0xc72090f5feecc880!8m2!3d-31.2543149!4d-52.2122451!16s%2Fg%2F11c31xnyv4?entry=ttu"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground whitespace-pre-line hover:text-primary transition-colors hover:underline"
+                        >
+                          {info.content}
+                        </a>
+                      ) : (
+                        <p className="text-muted-foreground whitespace-pre-line">{info.content}</p>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -92,7 +103,7 @@ const Contact = () => {
           </h2>
           <div className="rounded-xl overflow-hidden shadow-strong h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7!2d-51.9777!3d-31.3653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDIxJzU1LjEiUyA1McKwNTgnMzkuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.123!2d-52.2122451!3d-31.2543149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95106f6d336883a9%3A0xc72090f5feecc880!2sMercado%20e%20Padaria%20KRONING!5e0!3m2!1spt-BR!2sbr!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}
