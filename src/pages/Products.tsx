@@ -247,7 +247,7 @@ const Products = () => {
           </p>
         </div>
 
-        {renderCategory("Pães Artesanais", "paes", products.paes)}
+        {renderCategory("Pães", "paes", products.paes)}
         {renderCategory("Bolachas", "bolachas", products.bolachas)}
       </div>
     </div>
