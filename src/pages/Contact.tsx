@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -22,6 +22,18 @@ const Contact = () => {
       icon: Clock,
       title: "Horário",
       content: "Segunda a Sábado - 7:30 às 12:00 | 13:00 às 19:30\nDomingo - 8:30 às 11:00",
+    },
+    {
+      icon: Facebook,
+      title: "Facebook",
+      content: "Mercado e Padaria Kroning",
+      link: "https://www.facebook.com/mercadoepadariakroning",
+    },
+    {
+      icon: Instagram,
+      title: "Instagram",
+      content: "@padariakroning",
+      link: "https://www.instagram.com/padariakroning/",
     },
   ];
 
@@ -78,6 +90,15 @@ const Contact = () => {
                       ) : info.title === "E-mail" ? (
                         <a
                           href="mailto:kroning@outlook.com.br"
+                          className="text-muted-foreground whitespace-pre-line hover:text-primary transition-colors hover:underline"
+                        >
+                          {info.content}
+                        </a>
+                      ) : info.title === "Facebook" || info.title === "Instagram" ? (
+                        <a
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-muted-foreground whitespace-pre-line hover:text-primary transition-colors hover:underline"
                         >
                           {info.content}
