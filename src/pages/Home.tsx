@@ -5,11 +5,33 @@ import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
 import sectionDivider from "@/assets/section-divider.svg";
-import kroningProducts from "@/assets/kroning-products.png";
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 import wheatPattern from "@/assets/wheat-pattern-bg.png";
 import parallaxBreads from "@/assets/parallax-breads.jpg";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+const bolachasImages = [
+  { src: "/Produtos kroning/Produtos/Bolachas /AMANTEIGADO.jpeg", alt: "Amanteigado" },
+  { src: "/Produtos kroning/Produtos/Bolachas /BISCOITO SALGADO.jpeg", alt: "Biscoito Salgado" },
+  { src: "/Produtos kroning/Produtos/Bolachas /CORAÇÃO DE MEL C_ CHOCOLATE.jpeg", alt: "Coração de Mel com Chocolate" },
+  { src: "/Produtos kroning/Produtos/Bolachas /DENTINHOS.jpeg", alt: "Dentinhos" },
+  { src: "/Produtos kroning/Produtos/Bolachas /FOLHADA DOCE.jpeg", alt: "Folhada Doce" },
+  { src: "/Produtos kroning/Produtos/Bolachas /MEL COM COCO.jpeg", alt: "Mel com Coco" },
+  { src: "/Produtos kroning/Produtos/Bolachas /MEL C_ CHOCOLATE.jpeg", alt: "Mel com Chocolate" },
+  { src: "/Produtos kroning/Produtos/Bolachas /MEL MELADO.jpeg", alt: "Mel Melado" },
+  { src: "/Produtos kroning/Produtos/Bolachas /MEL PINTADO.jpeg", alt: "Mel Pintado" },
+  { src: "/Produtos kroning/Produtos/Bolachas /NATALINA.jpeg", alt: "Natalina" },
+  { src: "/Produtos kroning/Produtos/Bolachas /PALITO DE COCO.jpeg", alt: "Palito de Coco" },
+  { src: "/Produtos kroning/Produtos/Bolachas /PALITO DOCE.jpeg", alt: "Palito Doce" },
+  { src: "/Produtos kroning/Produtos/Bolachas /POLVILHO COM CHOCOLATE E AMENDOIM.jpeg", alt: "Polvilho com Chocolate e Amendoim" },
+  { src: "/Produtos kroning/Produtos/Bolachas /POLVILHO COM CHOCOLATE.jpeg", alt: "Polvilho com Chocolate" },
+  { src: "/Produtos kroning/Produtos/Bolachas /POLVILHO COM GOIABADA.jpeg", alt: "Polvilho com Goiabada" },
+  { src: "/Produtos kroning/Produtos/Bolachas /POLVILHO_.jpeg", alt: "Polvilho" },
+  { src: "/Produtos kroning/Produtos/Bolachas /ROSQUINHA GLACÊ.jpeg", alt: "Rosquinha Glacê" },
+  { src: "/Produtos kroning/Produtos/Bolachas /SALGADINHO.jpeg", alt: "Salgadinho" },
+];
 const Home = () => {
   return <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
@@ -100,12 +122,41 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className="flex justify-center animate-fade-in mb-12" style={{ animationDelay: "0.2s" }}>
-          <img 
-            src={kroningProducts} 
-            alt="Produtos Kroning" 
-            className="w-full max-w-5xl h-auto object-contain"
-          />
+        <div className="w-full max-w-6xl mx-auto animate-fade-in mb-12" style={{ animationDelay: "0.2s" }}>
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+                stopOnInteraction: false,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {bolachasImages.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="p-4 text-center">
+                        <p className="font-semibold text-[#480E0A]">{image.alt}</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
 
         <div className="text-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
