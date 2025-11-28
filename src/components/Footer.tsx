@@ -1,6 +1,7 @@
-import { Instagram, Facebook } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import wheatFooter from "@/assets/wheat-footer.png";
+import instagramIcon from "@/assets/instagram-icon.png";
+import facebookIcon from "@/assets/facebook-icon.png";
 
 const Footer = () => {
 
@@ -31,17 +32,17 @@ const Footer = () => {
               href="https://www.facebook.com/mercadoepadariakroning"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-header-red hover:bg-title-gold hover:text-white transition-all"
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-title-gold transition-all"
             >
-              <Facebook className="h-6 w-6" />
+              <img src={facebookIcon} alt="Facebook" className="h-7 w-7" />
             </a>
             <a
               href="https://www.instagram.com/padariakroning/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-header-red hover:bg-title-gold hover:text-white transition-all"
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-title-gold transition-all"
             >
-              <Instagram className="h-6 w-6" />
+              <img src={instagramIcon} alt="Instagram" className="h-7 w-7" />
             </a>
           </div>
           
