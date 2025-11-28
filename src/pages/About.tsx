@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20" style={{ backgroundColor: '#FEEFD2' }}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
