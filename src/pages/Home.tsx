@@ -180,13 +180,8 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-repeat"
-          style={{ backgroundImage: `url(${wheatPattern})` }}
-        />
-        <div className="absolute inset-0 bg-background/60" />
-        <div className="relative container mx-auto px-4 text-center animate-fade-in z-10">
+      <section className="py-20">
+        <div className="container mx-auto px-4 text-center animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary hover:text-primary transition-none mb-6">
             Faça seu Pedido Agora
           </h2>
