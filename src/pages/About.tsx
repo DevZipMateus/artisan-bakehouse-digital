@@ -1,4 +1,4 @@
-import { Heart, Award, Users, Leaf, Lightbulb, Target, Eye } from "lucide-react";
+import { Heart, Award, Users, Lightbulb, Target, Eye } from "lucide-react";
 import aboutImage from "@/assets/about-bakery.jpg";
 
 const About = () => {
@@ -6,27 +6,22 @@ const About = () => {
     {
       icon: Award,
       title: "Qualidade",
-      description: "Ingredientes selecionados e processos artesanais",
+      description: "Compromisso em oferecer produtos frescos e de alta qualidade",
     },
     {
       icon: Users,
       title: "Tradição",
-      description: "Receitas passadas de geração em geração",
+      description: "Respeitar e valorizar as receitas e técnicas tradicionais",
     },
     {
-      icon: Leaf,
-      title: "Sustentabilidade",
-      description: "Compromisso com o meio ambiente e práticas conscientes",
+      icon: Lightbulb,
+      title: "Inovação",
+      description: "Estar sempre aberto a novas ideias e sabores, adaptando-se às tendências e necessidades dos nossos clientes",
     },
     {
       icon: Heart,
       title: "Atendimento",
       description: "Acolhimento e cuidado com cada cliente",
-    },
-    {
-      icon: Lightbulb,
-      title: "Inovação",
-      description: "Sempre buscando novas formas de surpreender",
     },
   ];
 
@@ -39,7 +34,7 @@ const About = () => {
             Quem Somos
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Uma história de amor, tradição e dedicação à arte da panificação
+            A mais de 10 anos no mercado, oferecendo qualidade e tradição
           </p>
         </div>
 
@@ -55,23 +50,11 @@ const About = () => {
 
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "200ms" }}>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">
-              Nossa Filosofia
+              Mercado e Padaria Kroning
             </h2>
             
             <p className="text-lg text-foreground leading-relaxed">
-              Acreditamos que a alimentação é um elemento essencial para o bem-estar e a felicidade das pessoas. Nossa missão vai além de simplesmente oferecer pães frescos e produtos de qualidade.
-            </p>
-
-            <p className="text-lg text-foreground leading-relaxed">
-              Queremos criar um espaço onde a comunidade se encontre, compartilhe experiências e celebre momentos especiais. Acreditamos que cada produto que oferecemos deve ter uma história, refletindo nosso compromisso com a qualidade, a tradição e a sustentabilidade.
-            </p>
-
-            <p className="text-lg text-foreground leading-relaxed">
-              Queremos ser um ponto de encontro onde nossos clientes possam não apenas adquirir alimentos, mas também encontrar inspiração, descobrir novos sabores.
-            </p>
-
-            <p className="text-lg text-foreground leading-relaxed">
-              Estamos aqui para promover um estilo de vida saudável, fornecendo produtos que nutrem o corpo e a alma, porque acreditamos que a verdadeira conexão acontece ao redor da sua mesa.
+              A mais de 10 anos no mercado, creditamos que cada produto que oferecemos deve ter uma história, refletindo nosso compromisso com a qualidade, a tradição. Nossa missão vai além de simplesmente oferecer pães frescos e produtos de qualidade; queremos criar um espaço onde a comunidade se encontre, compartilhe experiências e celebre momentos especiais.
             </p>
           </div>
         </div>
@@ -93,7 +76,7 @@ const About = () => {
                 Missão
               </h3>
               <p className="text-lg text-foreground leading-relaxed">
-                Oferecer produtos de alta qualidade, preparados com ingredientes selecionados e receitas tradicionais, proporcionando aos nossos clientes uma experiência acolhedora e saborosa a cada refeição.
+                Oferecer produtos de alta qualidade, preparados com ingredientes selecionados e receitas tradicionais, proporcionando aos nossos clientes uma experiência acolhedora e saborosa.
               </p>
             </div>
 
@@ -105,7 +88,7 @@ const About = () => {
                 Visão
               </h3>
               <p className="text-lg text-foreground leading-relaxed">
-                Ser reconhecida como uma padaria de referência na nossa comunidade, destacando-nos pela qualidade e tradição dos nossos produtos e pelo atendimento excepcional, sempre inovando e mantendo um compromisso com a saúde dos nossos clientes.
+                Ser reconhecida como uma padaria de referência na nossa comunidade, destacando-nos pela qualidade e tradição dos nossos produtos e pelo atendimento excepcional
               </p>
             </div>
           </div>
@@ -122,7 +105,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
