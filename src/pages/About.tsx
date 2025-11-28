@@ -125,24 +125,23 @@ const About = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center gradient-warm rounded-2xl p-12 shadow-strong animate-fade-in">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-            Visite Nossa Padaria
-          </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Conheça nosso espaço, sinta o aroma irresistível e experimente produtos fresquinhos
-            direto do forno. Será um prazer recebê-lo!
-          </p>
-        </div>
-
         {/* Footer Image */}
-        <div className="mt-20 animate-fade-in">
+        <div className="mt-20 animate-fade-in relative">
           <img
             src={aboutBreadsFooter}
             alt="Produtos da Padaria Kroning"
             className="w-full h-auto object-cover rounded-2xl shadow-strong"
           />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 rounded-2xl pointer-events-none" 
+               style={{
+                 background: `linear-gradient(to bottom, 
+                   #EDE8DE 0%, 
+                   transparent 15%, 
+                   transparent 85%, 
+                   #EDE8DE 100%)`
+               }}>
+          </div>
         </div>
       </div>
     </div>
