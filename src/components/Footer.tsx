@@ -72,7 +72,7 @@ const Footer = () => {
               href="https://lp.montesite.com.br/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-title-gold hover:text-white transition-colors"
+              className="text-[#D69C6C] hover:text-white transition-colors"
             >
               MonteSite
             </a>
