@@ -126,22 +126,12 @@ const About = () => {
         </div>
 
         {/* Footer Image */}
-        <div className="mt-20 animate-fade-in relative">
+        <div className="mt-20 animate-fade-in">
           <img
             src={aboutBreadsFooter}
             alt="Produtos da Padaria Kroning"
-            className="w-full h-auto object-cover rounded-2xl shadow-strong"
+            className="w-full h-auto object-cover rounded-2xl shadow-strong opacity-30"
           />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 rounded-2xl pointer-events-none" 
-               style={{
-                 background: `linear-gradient(to bottom, 
-                   #EDE8DE 0%, 
-                   transparent 15%, 
-                   transparent 85%, 
-                   #EDE8DE 100%)`
-               }}>
-          </div>
         </div>
       </div>
     </div>
