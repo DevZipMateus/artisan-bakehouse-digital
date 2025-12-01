@@ -201,6 +201,103 @@ const Products = () => {
         image: "/Produtos kroning/Produtos/Bolachas /SALGADINHO.jpeg",
       },
     ],
+    salgados: [
+      {
+        name: "Bolinha de Queijo",
+        description: "Salgado crocante recheado com queijo derretido",
+        image: "/Produtos kroning/Produtos/Salgados/BOLINHA DE QUEIJO.png",
+      },
+      {
+        name: "Coxinha de Frango",
+        description: "Tradicional coxinha de frango cremosa e saborosa",
+        image: "/Produtos kroning/Produtos/Salgados/COXINHA DE FRANGO.png",
+      },
+      {
+        name: "Coxona de Frango",
+        description: "Coxinha grande de frango, perfeita para matar a fome",
+        image: "/Produtos kroning/Produtos/Salgados/COXONA DE FRANGO.png",
+      },
+      {
+        name: "Croquete de Carne",
+        description: "Croquete crocante recheado com carne temperada",
+        image: "/Produtos kroning/Produtos/Salgados/CROQUETE DE CARNE.png",
+      },
+      {
+        name: "Espetinho de Frango",
+        description: "Espetinho de frango empanado e frito",
+        image: "/Produtos kroning/Produtos/Salgados/ESPETINHO DE FRANGO.png",
+      },
+      {
+        name: "Espetão de Frango",
+        description: "Espetinho grande de frango crocante",
+        image: "/Produtos kroning/Produtos/Salgados/ESPETÃO DE FRANGO.png",
+      },
+      {
+        name: "Folhado de Avelã",
+        description: "Massa folhada com recheio de creme de avelã",
+        image: "/Produtos kroning/Produtos/Salgados/FOLHADO DE AVELÃ.png",
+      },
+      {
+        name: "Folhado de Carne",
+        description: "Massa folhada recheada com carne moída temperada",
+        image: "/Produtos kroning/Produtos/Salgados/FOLHADO DE CARNE.png",
+      },
+      {
+        name: "Folhado de Frango",
+        description: "Massa folhada com recheio cremoso de frango",
+        image: "/Produtos kroning/Produtos/Salgados/FOLHADO DE FRANGO.png",
+      },
+      {
+        name: "Folhado de Goiabada",
+        description: "Massa folhada doce com goiabada derretida",
+        image: "/Produtos kroning/Produtos/Salgados/FOLHADO DE GOIABADA.png",
+      },
+      {
+        name: "Folhado de Salsicha",
+        description: "Massa folhada enrolada com salsicha",
+        image: "/Produtos kroning/Produtos/Salgados/FOLHADO DE SALSICHA.png",
+      },
+      {
+        name: "Mini Pizza Calabresa",
+        description: "Mini pizza com calabresa, mussarela e molho de tomate",
+        image: "/Produtos kroning/Produtos/Salgados/MINI PIZZA CALABRESA.png",
+      },
+      {
+        name: "Mini Pizza Frango",
+        description: "Mini pizza com frango, mussarela e catupiry",
+        image: "/Produtos kroning/Produtos/Salgados/MINI PIZZA FRANGO.png",
+      },
+      {
+        name: "Pastel",
+        description: "Pastel frito crocante com diversos recheios",
+        image: "/Produtos kroning/Produtos/Salgados/PASTEL.png",
+      },
+      {
+        name: "Pastelzinhos",
+        description: "Mini pastéis perfeitos para festas e eventos",
+        image: "/Produtos kroning/Produtos/Salgados/PASTELZINHOS.png",
+      },
+      {
+        name: "Pizza Calabresa",
+        description: "Pizza tradicional com calabresa, mussarela e molho",
+        image: "/Produtos kroning/Produtos/Salgados/PIZZA CALABRESA.png",
+      },
+      {
+        name: "Pizza Frango",
+        description: "Pizza de frango com catupiry e mussarela",
+        image: "/Produtos kroning/Produtos/Salgados/PIZZA FRANGO.png",
+      },
+      {
+        name: "Risoles",
+        description: "Risoles variados: carne, frango, presunto e queijo",
+        image: "/Produtos kroning/Produtos/Salgados/RISOLES - CARNE, FRANGO, PRESUNTO E QUEIJO.png",
+      },
+      {
+        name: "Enroladinho de Salsicha",
+        description: "Salsicha envolvida em massa e frita até dourar",
+        image: "/Produtos kroning/Produtos/Salgados/RISOLESENROLADINHO DE SALSICHA_.png",
+      },
+    ],
   };
 
   const renderCategory = (title: string, id: string, items: typeof products.paes) => (
@@ -249,6 +346,7 @@ const Products = () => {
 
         {renderCategory("Pães", "paes", products.paes)}
         {renderCategory("Bolachas", "bolachas", products.bolachas)}
+        {renderCategory("Salgados", "salgados", products.salgados)}
       </div>
     </div>
   );
