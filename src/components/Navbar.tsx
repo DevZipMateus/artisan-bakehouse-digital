@@ -32,7 +32,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors relative py-2 ${isActive(link.path) ? "text-[#D69C6C]" : "text-black hover:text-[#D69C6C]"}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} className={`font-medium transition-colors relative py-2 ${isActive(link.path) ? "text-[#D69C6C]" : "text-white hover:text-[#D69C6C]"}`}>
                 {link.name}
                 {isActive(link.path) && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#D69C6C] rounded-full" />}
               </Link>)}
