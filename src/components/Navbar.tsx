@@ -39,12 +39,9 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden relative"
-          >
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden relative">
             <div className="bg-title-gold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform">
-              <span className="text-title-gold font-display font-semibold text-sm tracking-wider">
+              <span className="text-title-gold font-display font-semibold text-sm tracking-wider text-secondary">
                 {isMenuOpen ? "FECHAR" : "MENU"}
               </span>
             </div>
