@@ -140,12 +140,12 @@ const Home = () => {
               {bolachasImages.map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
-                    <div className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-64 object-cover"
-                      />
+              <div className="rounded-xl overflow-hidden shadow-lg bg-[#EDE8DE] hover:shadow-2xl transition-shadow duration-300">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 object-contain p-4"
+                />
                     </div>
                   </div>
                 </CarouselItem>
