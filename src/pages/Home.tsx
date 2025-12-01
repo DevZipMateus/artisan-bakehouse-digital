@@ -146,16 +146,11 @@ const Home = () => {
                         alt={image.alt}
                         className="w-full h-64 object-cover"
                       />
-                      <div className="p-4 text-center">
-                        <p className="font-semibold text-[#480E0A]">{image.alt}</p>
-                      </div>
                     </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
           </Carousel>
         </div>
 
