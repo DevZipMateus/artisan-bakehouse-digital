@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20 relative" style={{ backgroundColor: '#FEEFD2' }}>
+    <div className="min-h-screen py-20 relative" style={{ backgroundColor: '#ede8de' }}>
       {/* Background Image - Full Width */}
       <div className="absolute inset-0 flex items-end overflow-hidden">
         <img
