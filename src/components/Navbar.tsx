@@ -44,7 +44,7 @@ const Navbar = () => {
             className="md:hidden relative"
           >
             <div className="bg-title-gold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform">
-              <span className="text-primary font-display font-semibold text-sm tracking-wider">
+              <span className="text-title-gold font-display font-semibold text-sm tracking-wider">
                 {isMenuOpen ? "FECHAR" : "MENU"}
               </span>
             </div>
