@@ -18,10 +18,16 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed top-20 bottom-0 left-0 right-0 w-full h-[calc(100vh-80px)] overflow-hidden">
+    <div className="fixed top-20 bottom-0 left-0 right-0 w-full h-[calc(100vh-80px)] overflow-hidden flex flex-col">
+        {/* Observação sobre valores */}
+        <div className="bg-primary text-primary-foreground text-center py-2 px-4 text-xs sm:text-sm">
+          <p>
+            <strong>Atenção:</strong> Os valores exibidos são para retirada no mercado. Para entregas, consulte o valor com seu vendedor.
+          </p>
+        </div>
         <iframe
           src="https://padariakroning.egestor.com.br/vitrine/"
-          className="w-full h-full border-0"
+          className="w-full flex-1 border-0"
           title="Vitrine de Produtos Kroning"
           style={{
             overflow: "auto",
