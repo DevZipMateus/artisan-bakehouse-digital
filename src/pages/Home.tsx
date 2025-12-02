@@ -77,13 +77,36 @@ const Home = () => {
             />
           </div>
           
-          {/* Coxinhas - Right Side (Centered on mobile) */}
-          <div className="md:animate-slide-in-right animate-fade-in" 
+          {/* Mobile - Alternating Images */}
+          <div className="md:hidden animate-fade-in relative" 
                style={{ animationDelay: "1s" }}>
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
-              className="h-[100px] xs:h-[120px] sm:h-[160px] md:h-[200px] lg:h-[220px] xl:h-[240px] 2xl:h-[280px] w-auto object-contain drop-shadow-2xl"
+              className="h-[140px] xs:h-[160px] sm:h-[180px] w-auto object-contain drop-shadow-2xl absolute inset-0 m-auto transition-opacity duration-1000"
+              style={{ 
+                animation: "mobileImageSwitch 6s infinite",
+                opacity: 1
+              }}
+            />
+            <img 
+              src={heroBreadBasket} 
+              alt="Pães Artesanais" 
+              className="h-[140px] xs:h-[160px] sm:h-[180px] w-auto object-contain drop-shadow-2xl transition-opacity duration-1000"
+              style={{ 
+                animation: "mobileImageSwitch 6s infinite 3s",
+                opacity: 0
+              }}
+            />
+          </div>
+          
+          {/* Desktop - Coxinhas Right Side */}
+          <div className="hidden md:block md:animate-slide-in-right" 
+               style={{ animationDelay: "1s" }}>
+            <img 
+              src={heroCoxinhas} 
+              alt="Coxinhas" 
+              className="md:h-[200px] lg:h-[220px] xl:h-[240px] 2xl:h-[280px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
