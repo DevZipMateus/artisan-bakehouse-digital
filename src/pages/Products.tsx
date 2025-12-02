@@ -286,17 +286,17 @@ const Products = () => {
   };
 
   const renderCategory = (title: string, id: string, items: typeof products.paes) => (
-    <section id={id} className="mb-20 scroll-mt-24">
-      <div className="mb-12 animate-fade-in">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">{title}</h2>
-        <div className="h-1 w-24 bg-secondary rounded-full" />
+    <section id={id} className="mb-12 sm:mb-16 md:mb-20 scroll-mt-24">
+      <div className="mb-8 sm:mb-12 animate-fade-in">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">{title}</h2>
+        <div className="h-1 w-16 sm:w-24 bg-secondary rounded-full" />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-8 max-w-7xl mx-auto">
         {items.map((product, index) => (
           <div
             key={index}
-            className="group bg-card rounded-xl overflow-hidden shadow-medium hover-lift animate-fade-in"
+            className="group bg-card rounded-lg sm:rounded-xl overflow-hidden shadow-medium hover-lift animate-fade-in"
             style={{ animationDelay: `${index * 50}ms` }}
           >
             <div className="aspect-square overflow-hidden bg-muted">
@@ -306,11 +306,11 @@ const Products = () => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="p-6">
-              <h3 className="font-display text-xl font-semibold text-primary mb-2 group-hover:text-accent transition-colors">
+            <div className="p-3 sm:p-4 md:p-6">
+              <h3 className="font-display text-sm sm:text-base md:text-xl font-semibold text-primary mb-1 sm:mb-2 group-hover:text-accent transition-colors line-clamp-2">
                 {product.name}
               </h3>
-              <p className="text-muted-foreground">{product.description}</p>
+              <p className="text-muted-foreground text-xs sm:text-sm md:text-base line-clamp-2">{product.description}</p>
             </div>
           </div>
         ))}
@@ -319,11 +319,11 @@ const Products = () => {
   );
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-primary mb-6">Nossos Produtos</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+    <div className="min-h-screen py-12 sm:py-16 md:py-20">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 animate-fade-in">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-6">Nossos Produtos</h1>
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
             Conheça nossa linha completa de produtos. Tudo feito com ingredientes selecionados e muito carinho da nossa
             familia para a sua.
           </p>

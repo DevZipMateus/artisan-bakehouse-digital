@@ -39,9 +39,9 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden relative">
-            <div className="bg-title-gold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform">
-              <span className="font-display font-semibold text-sm tracking-wider" style={{ color: '#480E0A' }}>
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden relative active:scale-95 transition-transform">
+            <div className="bg-title-gold px-4 sm:px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform">
+              <span className="font-display font-semibold text-xs sm:text-sm tracking-wider" style={{ color: '#480E0A' }}>
                 {isMenuOpen ? "FECHAR" : "MENU"}
               </span>
             </div>
@@ -49,9 +49,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden pb-4 animate-fade-in">
-            <div className="flex flex-col space-y-3">
-              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMenuOpen(false)} className={`font-medium py-2 px-4 rounded-lg transition-colors ${isActive(link.path) ? "bg-white/20 text-[#D69C6C]" : "text-white hover:bg-white/10 hover:text-[#D69C6C]"}`}>
+        {isMenuOpen && <div className="md:hidden pb-4 pt-2 animate-fade-in">
+            <div className="flex flex-col space-y-2">
+              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMenuOpen(false)} className={`font-medium py-3 px-4 rounded-lg transition-colors text-sm sm:text-base ${isActive(link.path) ? "bg-white/20 text-[#D69C6C]" : "text-white hover:bg-white/10 hover:text-[#D69C6C]"}`}>
                   {link.name}
                 </Link>)}
             </div>
