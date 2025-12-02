@@ -4,7 +4,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import logoKroning from "@/assets/logo-kroning.png";
 import heroBreadBasket from "@/assets/hero-bread-basket.png";
 import heroCoxinhas from "@/assets/hero-coxinhas.png";
-import sectionDivider from "@/assets/section-divider.svg";
+
 import bakeryCookies from "@/assets/bakery-cookies.jpg";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 import wheatPattern from "@/assets/wheat-pattern-bg.png";
@@ -64,51 +64,26 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section Divider with Product Images */}
-      <div className="relative -mt-16 xs:-mt-20 sm:-mt-28 md:-mt-24 mb-[-4px]">
-        {/* Layered SVG Effect */}
-        <div className="relative w-[100vw] left-1/2 -translate-x-1/2 leading-[0] block">
-          {/* Layer 1 - Background (15% opacity, displaced up) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-15 -translate-y-4 sm:-translate-y-6"
-            aria-hidden="true"
-          />
-          {/* Layer 2 - Middle (30% opacity, slightly displaced) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block absolute top-0 left-0 opacity-30 -translate-y-2 sm:-translate-y-3"
-            aria-hidden="true"
-          />
-          {/* Layer 3 - Front (100% opacity, main divider) */}
-          <img 
-            src={sectionDivider} 
-            alt="" 
-            className="w-full h-auto block relative"
-          />
-        </div>
-        
-        {/* Product Images - Positioned at the divider line */}
-        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-10">
+      {/* Product Images Section */}
+      <div className="relative py-8 sm:py-12 md:py-16">
+        <div className="container mx-auto px-4 flex justify-center items-center gap-4 sm:gap-8 md:gap-16">
           {/* Bread Basket - Left Side */}
-          <div className="hidden md:block absolute left-8 lg:left-16 xl:left-24 top-1/2 animate-slide-in-left" 
+          <div className="hidden md:block animate-slide-in-left" 
                style={{ animationDelay: "0.8s" }}>
             <img 
               src={heroBreadBasket} 
               alt="Pães Artesanais" 
-              className="h-[200px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
+              className="h-[180px] md:h-[200px] lg:h-[220px] xl:h-[240px] 2xl:h-[280px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
           
           {/* Coxinhas - Right Side (Centered on mobile) */}
-          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-[30%] xs:top-[35%] sm:top-[40%] md:top-1/2 md:animate-slide-in-right animate-fade-in" 
+          <div className="md:animate-slide-in-right animate-fade-in" 
                style={{ animationDelay: "1s" }}>
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
-              className="h-[100px] xs:h-[120px] sm:h-[180px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
+              className="h-[100px] xs:h-[120px] sm:h-[160px] md:h-[200px] lg:h-[220px] xl:h-[240px] 2xl:h-[280px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
