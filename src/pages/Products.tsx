@@ -35,7 +35,7 @@ const Products = () => {
       },
       {
         name: "Cacetinho",
-        description: "Pacote de 500g com 10 und. (30g cada)",
+        description: "Pacote de 500g com 10 und.",
         image: "/Produtos kroning/Produtos/Pães /CACETINHO.png",
       },
       {
