@@ -18,7 +18,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="fixed top-20 bottom-0 left-0 right-0 w-full h-[calc(100vh-80px)] overflow-hidden flex flex-col">
+    <div className="fixed top-20 bottom-0 left-0 right-0 w-full overflow-hidden flex flex-col" style={{ height: 'calc(100dvh - 80px)' }}>
         {/* Observação sobre valores */}
         <div className="bg-primary text-primary-foreground text-center py-2 px-4 text-xs sm:text-sm">
           <p>
