@@ -113,7 +113,7 @@ const Home = () => {
       </div>
 
       {/* Products Section */}
-      <section className="py-12 sm:py-16 md:py-20 container mx-auto px-4 -mt-1">
+      <section className="py-6 sm:py-8 md:py-12 container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12 animate-fade-in px-2 sm:px-4 pt-12 xs:pt-8 sm:pt-4 md:pt-0">
           <h2 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-[#480E0A] hover:text-[#480E0A] transition-none leading-tight">
             Qualidade e Tradição na Sua Mesa
