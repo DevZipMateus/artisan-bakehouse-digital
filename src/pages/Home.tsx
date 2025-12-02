@@ -65,7 +65,7 @@ const Home = () => {
       </section>
 
       {/* Section Divider with Product Images */}
-      <div className="relative -mt-24 sm:-mt-28 md:-mt-24 mb-[-4px]">
+      <div className="relative -mt-16 xs:-mt-20 sm:-mt-28 md:-mt-24 mb-[-4px]">
         {/* Layered SVG Effect */}
         <div className="relative w-[100vw] left-1/2 -translate-x-1/2 leading-[0] block">
           {/* Layer 1 - Background (15% opacity, displaced up) */}
@@ -103,12 +103,12 @@ const Home = () => {
           </div>
           
           {/* Coxinhas - Right Side (Centered on mobile) */}
-          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-1/2 md:animate-slide-in-right animate-fade-in" 
+          <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-24 top-[30%] xs:top-[35%] sm:top-[40%] md:top-1/2 md:animate-slide-in-right animate-fade-in" 
                style={{ animationDelay: "1s" }}>
             <img 
               src={heroCoxinhas} 
               alt="Coxinhas" 
-              className="h-[140px] sm:h-[180px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
+              className="h-[100px] xs:h-[120px] sm:h-[180px] md:h-[220px] lg:h-[240px] xl:h-[260px] 2xl:h-[300px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
@@ -116,7 +116,7 @@ const Home = () => {
 
       {/* Products Section */}
       <section className="py-12 sm:py-16 md:py-20 container mx-auto px-4 -mt-1">
-        <div className="text-center mb-8 sm:mb-12 animate-fade-in px-2 sm:px-4">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in px-2 sm:px-4 pt-12 xs:pt-8 sm:pt-4 md:pt-0">
           <h2 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-[#480E0A] hover:text-[#480E0A] transition-none leading-tight">
             Qualidade e Tradição na Sua Mesa
           </h2>
