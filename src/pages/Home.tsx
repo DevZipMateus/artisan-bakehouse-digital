@@ -65,7 +65,7 @@ const Home = () => {
       </section>
 
       {/* Product Images Section */}
-      <div className="relative py-8 sm:py-12 md:py-16">
+      <div className="relative py-4 sm:py-6 md:py-10">
         <div className="container mx-auto px-4 flex justify-center items-center gap-4 sm:gap-8 md:gap-16">
           {/* Bread Basket - Left Side */}
           <div className="hidden md:block animate-slide-in-left" 
